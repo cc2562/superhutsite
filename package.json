@@ -12,6 +12,10 @@
   "dependencies": {
     "@astrojs/starlight": "^0.34.7",
     "astro": "^5.6.1",
+    "astro-icon": "^1.1.5",
     "sharp": "^0.34.2"
+  },
+  "devDependencies": {
+    "@iconify-json/basil": "^1.2.2"
   }
 }

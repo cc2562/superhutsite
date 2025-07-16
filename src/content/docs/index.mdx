@@ -1,36 +1,53 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: 超级工大APP
+description: 湖南工业大学第三方APP
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 不再需要使用智慧工大APP啦~
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/logo.png
   actions:
-    - text: Example Guide
+    - text: 立即下载
       link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+      icon: download
+    - text: 查看特征
+      link: /#next-steps
       icon: external
-      variant: minimal
+      variant: secondary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 软件特征
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="完全适配智慧工大" icon="star">
+		适配智慧工大的所有常用功能
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="实用设计" icon="sun">
+		各项为学生专门设计的实用功能
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="快速响应" icon="rocket">
+		超快的启动速度，摆脱缓慢的智慧工大
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="隐私保障" icon="approve-check-circle">
+		无任何追踪器，无任何敏感信息记录.
 	</Card>
 </CardGrid>
+
+import { Steps } from '@astrojs/starlight/components';
+
+## 更新日志
+
+
+<Card title="1.1.0">
+  1.1.0版本发布啦~
+  - 注意本版本由于签名更新，需要卸载老版本后才能安装。
+  - 修复了由于学校更新严重机制导致app无法使用的问题
+  - 修复了成绩查询无法直接查看当前学期成绩的问题
+  - 删除了通过教务系统登录的模式，后续只支持使用智慧工大账户登录 优化了部分用户体验
+</Card>
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<center><LinkButton href="/upgrade/upgrade_note">查看完整更新日志</LinkButton></center>
